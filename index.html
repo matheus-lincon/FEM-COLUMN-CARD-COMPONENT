@@ -1,23 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Column Preview Card Component">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | 3-column preview card component</title>
-</head>
-<body>
-  Sedans
-  Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
-  or on your next road trip.
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Column Preview Card Component" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | 3-column preview card component</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="section">
+        <article class="card">
+          <div class="card__icon">
+            <img src="./images/icon-sedans.svg" alt="" />
+          </div>
 
-  SUVs
-  Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
-  and off-road adventures.
+          <h1 class="card__title">Sedans</h1>
+          <p class="card__desc">
+            Choose a sedan for its affordability and excellent fuel economy.
+            Ideal for cruising in the city or on your next road trip.
+          </p>
+          <button class="card__button card__button-sedan" type="button">
+            Learn More
+          </button>
+        </article>
+        <article class="card">
+          <div class="card__icon">
+            <img src="./images/icon-suvs.svg" alt="" />
+          </div>
 
-  Luxury
-  Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
-  rental and arrive in style.
-</body>
+          <h1 class="card__title">SUVs</h1>
+          <p class="card__desc">
+            Take an SUV for its spacious interior, power, and versatility.
+            Perfect for your next family vacation and off-road adventures.
+          </p>
+          <button class="card__button card__button-suvs" type="button">
+            Learn More
+          </button>
+        </article>
+        <article class="card">
+          <div class="card__icon">
+            <img src="./images/icon-sedans.svg" alt="" />
+          </div>
+
+          <h1 class="card__title">Luxury</h1>
+          <p class="card__desc">
+            Cruise in the best car brands without the bloated prices. Enjoy the
+            enhanced comfort of a luxury rental and arrive in style.
+          </p>
+          <button class="card__button card__button-luxury" type="button">
+            Learn More
+          </button>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>
