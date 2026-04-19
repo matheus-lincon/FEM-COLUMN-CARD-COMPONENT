@@ -14,10 +14,11 @@
   --fs-title: 2.25rem;
   --fs-text: 0.9rem;
 
+  --spacing-xl: 5rem;
   --spacing-l: 3rem;
   --spacing-xm: 2.5rem;
   --spacing-m: 1.5rem;
-  --spacing-sm: 1rem;
+  --spacing-sm: 0.9rem;
 }
 
 *,
