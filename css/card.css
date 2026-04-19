@@ -1,0 +1,87 @@
+.main {
+  padding: var(--spacing-m);
+}
+
+.section {
+  display: grid;
+}
+
+@media screen and (min-width: 48rem) {
+  .section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-luxury {
+    grid-column: 1 / -1;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  .section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+    max-width: 18.75rem;
+  }
+
+  .card-luxury {
+    grid-column: auto;
+  }
+}
+
+.card {
+  display: grid;
+  gap: var(--spacing-xm);
+  padding: var(--spacing-l);
+}
+
+.card-sedans {
+  background-color: var(--primary-bg1);
+}
+.card-suvs {
+  background-color: var(--primary-bg2);
+}
+.card-luxury {
+  background-color: var(--primary-bg3);
+}
+
+.card__title {
+  font-family: var(--ff-title);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-title);
+  color: var(--neutral-100);
+  text-transform: uppercase;
+}
+
+.card__desc {
+  font-family: var(--ff-text);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-text);
+  color: var(--text);
+}
+
+.card__button {
+  padding: var(--spacing-sm);
+  border-radius: 1.5rem;
+  font-family: var(--ff-text);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-text);
+  border: 2px solid var(--neutral-100);
+  cursor: pointer;
+}
+
+.card__button:hover {
+  background: transparent;
+  color: var(--neutral-100);
+}
+
+.card__button-sedan {
+  color: var(--primary-bg1);
+}
+.card__button-suvs {
+  color: var(--primary-bg2);
+}
+.card__button-luxury {
+  color: var(--primary-bg3);
+}
